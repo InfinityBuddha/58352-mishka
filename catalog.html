@@ -39,39 +39,44 @@
       <div class="catalog__wrapper">
         <section class="product-cards">
           <article class="product-card">
-            <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
+            <div class="product-card__photo-wrapper">
+              <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
+            </div>
             <div class="product-card__wrapper">
               <h2 class="product-card__title">Зайчик-попрыгайчик</h2>
-              <span class="product-card__options">Рост 30 см, вес 200 г</span>
-              <hr class="product-card__divider">
+              <p class="product-card__options">Рост 30 см, вес 200 г</p>
               <span class="product-card__price">1 200 руб.</span>
+              <a class="product-card__basket" href=""></a>
             </div>
           </article>
           <article class="product-card">
-            <img src="http://placehold.it/260x195" alt="Корзинка для белья">
+            <div class="product-card__photo-wrapper">
+              <img src="http://placehold.it/260x195" alt="Корзинка для белья">
+            </div>
             <div class="product-card__wrapper">
               <h2 class="product-card__title">Корзинка для белья</h2>
-              <span class="product-card__options">Диаметр 15 см, высота 10 см</span>
-              <hr class="product-card__divider">
+              <p class="product-card__options">Диаметр 15 см, высота 10 см</p>
               <span class="product-card__price">690 руб.</span>
+              <a class="product-card__basket" href=""></a>
             </div>
           </article>
           <article class="product-card">
-            <img src="http://placehold.it/260x195" alt="Большая корзинка для игрушек">
+            <div class="product-card__photo-wrapper">
+              <img src="http://placehold.it/260x195" alt="Большая корзинка для игрушек">
+            </div>
             <div class="product-card__wrapper">
               <h2 class="product-card__title">Большая корзинка для игрушек</h2>
-              <span class="product-card__options">Диаметр 30 см, высота 30 см</span>
-              <hr class="product-card__divider">
+              <p class="product-card__options">Диаметр 30 см, высота 30 см</p>
               <span class="product-card__price">1 500 руб.</span>
+              <a class="product-card__basket" href=""></a>
             </div>
           </article>
         </section>
         <section class="production-process">
           <article class="production-card">
-            <h2 class="production-card__title">Процесс производства</h2>
-            <div class="production-card__video">
-              <img src="http://placehold.it/260x150" alt="Видео производства товаров">
-            </div>
+            <h2 class="production-card__title production-card__title--camera">Процесс производства</h2>
+            <video class="production-card__video" poster="http://placehold.it/260x150">
+            </video>
             <div class="production-card__wrapper">
               <p class="production-card__description">
                 По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
@@ -86,13 +91,13 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__social">
           <ul class="social-links">
-            <li><a class="social-links__link" href="" title="Наш инстаграм"></a></li>
-            <li><a class="social-links__link" href="" title="Наш фейсбук"></a></li>
-            <li><a class="social-links__link" href="" title="Наш твиттер"></a></li>
+            <li><a class="social-links__link social-links__link--instagram" href="#" title="Наш инстаграм"></a></li>
+            <li><a class="social-links__link social-links__link--facebook" href="#" title="Наш фейсбук"></a></li>
+            <li><a class="social-links__link social-links__link--twitter" href="#" title="Наш твиттер"></a></li>
           </ul>
         </div>
         <div class="page-footer__bottom">
-          <span class="page-footer__copyright">Разработано</span>
+          <a class="page-footer__copyright">Разработано</a>
         </div>
       </div>
     </footer>
