@@ -3,49 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__inner">
         <div class="page-header__top">
           <a class="page-header__logo" href="index.html">
-            <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
           </a>
-          <nav class="main-nav">
-            <div class="main-nav__dropdown">
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a href="catalog.html">Каталог товаров</a>
-                </li>
-                <li class="main-nav__item">
-                  <a href="form.html">Вязание на заказ</a>
-                </li>
-                <li class="main-nav__item">
-                  <a href="">Поиск по сайту</a>
-                </li>
-                <li class="main-nav__item">
-                  <a href="">Корзина: пока пуста</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
         </div>
+        <nav class="main-nav">
+          <div class="main-nav__dropdown">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="">Поиск по сайту</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
+      <section class="promo">
+        <h1 class="promo__header">Милые штуки ручной работы для дома</h1>
+        <div class="promo__list">
+          <div class="promo__item promo__item--interior">Предметы интерьера</div>
+          <div class="promo__item promo__item--toys">Детские игрушки</div>
+        </div>
+      </section>
     </header>
     <main class="page-content">
       <div class="page-content__inner">
-        <section class="promo">
-          <h1 class="promo__header">Милые штуки ручной работы для дома</h1>
-          <div class="promo__list">
-            <div class="promo__item promo__item--interior">Предметы интерьера</div>
-            <div class="promo__item promo__item--toys">Детские игрушки</div>
-          </div>
-        </section>
         <article class="best-product">
-            <h2 class="best-product__title">Вязаные корзинки</h2>
-            <p class="best-product__mark">Товар недели</p>
-            <div class="best-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-            </div>
+          <h2 class="best-product__title">Вязаные корзинки</h2>
+          <p class="best-product__label">Товар недели</p>
+          <div class="best-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+          </div>
           <ul class="best-product__options">
             <li class="best-product__option">Цвет:</li>
             <li class="best-product__option">«Тиффани»/серый</li>
@@ -54,8 +55,8 @@
             <li class="best-product__option">Высота</li>
             <li class="best-product__option">15 см</li>
           </ul>
-          <div class="best-product__photo-wrapper">
-            <img src="http://placehold.it/315x260" alt="Mishka">
+          <div class="best-product__photo-container">
+            <img src="img/triple-set-mobile@1x.jpg" alt="Товар недели">
           </div>
           <p class="best-product__price">Цена: 990 руб.</p>
           <a class="btn" href="">Заказать</a>
@@ -85,7 +86,6 @@
           </div>
           <a class="btn" href="">Написать</a>
         </section>
-        <span class="wave-separator"></span>
         <section class="contacts">
           <div class="contacts__wrapper">
             <h3 class="contacts__title">Контакты</h3>
@@ -103,16 +103,16 @@
                   </address>
                 </li>
             </ul>
-          </div>
-        </div>
-        <div class="map">
-          <img src="http://placehold.it/315x457" alt="Mishka">
+        </section>
+      </div>
+      <div class="map">
+        <img src="img/map-mobile@1x.jpg" alt="Наш адрес">
         </div>
         <a class="btn" href="">Напишите нам</a>
-      </section>
+      </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__inner">
         <div class="page-footer__social">
           <ul class="social-links">
             <li><a class="social-links__link social-links__link--instagram" href="#" title="Наш инстаграм"></a></li>
