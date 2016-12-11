@@ -11,6 +11,13 @@
   text-align: center;
   border: 2px solid #444444;
   width: 100%;
+
+  &--contacts {
+    margin: 0 auto;
+    max-width: 260px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 @media @tablet-widths {
@@ -22,5 +29,22 @@
     top: 0;
     right: 0;
     }
+
+    &--contacts {
+      max-width: 668px;
+      width: 235px;
+    }
   }
 }
+
+@media @desktop-widths {
+  .btn {
+
+    &--contacts {
+      margin: 0;
+      margin-left: 170px;
+      width: 230px;
+    }
+  }
+}
+
