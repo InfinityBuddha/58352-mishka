@@ -1,4 +1,23 @@
 .reviews {
   padding-top: 25px;
-  padding-bottom: 45px;
+  padding-bottom: 15px;
+}
+
+.reviews__container {
+  .container();
+
+  position: relative;
+}
+
+@media @tablet-widths {
+  .reviews {
+    background-image: url(/img/review@1x.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media @desktop-widths {
+  .reviews {
+    margin-left: 50px;
+  }
 }

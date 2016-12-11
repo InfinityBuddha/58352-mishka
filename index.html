@@ -42,19 +42,23 @@
           </div>
         </nav>
       </div>
+    </header>
+    <main class="page-content">
       <section class="promo">
         <h1 class="promo__header">Милые штуки ручной<br> работы для дома</h1>
         <div class="promo__list">
-          <div class="promo__item promo__item--interior">Предметы интерьера</div>
-          <div class="promo__item promo__item--toys">Детские игрушки</div>
+          <div class="promo__items">
+            <div class="promo__item promo__item--interior"><p>Предметы интерьера</p></div>
+            <div class="promo__item promo__item--toys"><p>Детские игрушки</p></div>
+          </div>
         </div>
       </section>
-    </header>
-    <main class="page-content">
       <article class="best-product">
         <div class="best-product__container">
           <div class="best-product__text-group">
-            <h2 class="best-product__title">Вязаные корзинки</h2>
+            <header class="best-product__header">
+              <h2 class="best-product__title">Вязаные корзинки</h2>
+            </header>
             <p class="best-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
             </p>
             <table class="best-product__options">
@@ -82,29 +86,39 @@
         </div>
       </article>
       <section class="our-features">
-        <h2 class="our-features__title">Коротко о нас:</h2>
-        <p class="our-features__item our-features__item--flower">Экологически чистые материалы</p>
-        <p class="our-features__item our-features__item--bill">Скандинавский стиль по российской цене</p>
-        <p class="our-features__item our-features__item--like">Увеличивает лайки на фотографиях</p>
-        <p class="our-features__item our-features__item--knitted">Связано вручную с любовью и умилением</p>
-        <p class="our-features__item our-features__item--rocket">Поддержка отечественного производителя</p>
-        <p class="our-features__item our-features__item--gift">Поставляется в подарочной упаковке</p>
+        <div class="our-features__container">
+          <h2 class="our-features__title">Коротко о нас:</h2>
+          <div class="our-features__list">
+            <div class="our-features__column">
+              <p class="our-features__item our-features__item--flower">Экологически чистые материалы</p>
+              <p class="our-features__item our-features__item--bill">Скандинавский стиль по российской цене</p>
+              <p class="our-features__item our-features__item--like">Увеличивает лайки на фотографиях</p>
+            </div>
+            <div class="our-features__column">
+              <p class="our-features__item our-features__item--knitted">Связано вручную с любовью и умилением</p>
+              <p class="our-features__item our-features__item--rocket">Поддержка отечественного производителя</p>
+              <p class="our-features__item our-features__item--gift">Поставляется в подарочной упаковке</p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="reviews">
-        <article class="review">
-          <h2 class="review__title">Отзывы</h2>
-          <blockquote class="review__text">
-            <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <span class="review__author">Анастасия Красильникова</span>
-            <span class="review__login">@misssssiskras</span>
-          </blockquote>
-        </article>
-        <div class="reviews-switcher">
-          <div class="reviews-switcher__left"></div>
-          <div class="reviews-switcher__right"></div>
+        <div class="reviews__container">
+          <article class="review">
+            <h2 class="review__title">Отзывы</h2>
+            <blockquote class="review__text">
+              <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <span class="review__author">Анастасия Красильникова</span>
+              <span class="review__login">@misssssiskras</span>
+            </blockquote>
+          </article>
+          <div class="review__switchers">
+            <a href="" class="review__switcher"></a>
+            <a href="" class="review__switcher"></a>
+          </div>
+          <a class="btn btn--reviews" href="">Написать</a>
         </div>
-        <a class="btn" href="">Написать</a>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">

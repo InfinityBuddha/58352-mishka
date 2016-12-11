@@ -1,6 +1,85 @@
 .our-features {
-  padding-top: 30px;
-  padding-bottom: 25px;
+  margin-bottom: 80px;
   font-size: 17px;
   font-weight: 800;
+}
+
+.our-features__container {
+  .container();
+
+}
+
+.our-features__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.our-features__item {
+  font-size: 17px;
+  margin-top: 90px;
+
+  &--flower {
+
+  }
+
+  &--bill {
+
+  }
+
+  &--like {
+
+  }
+
+  &--knitted {
+
+  }
+
+  &--rocket {
+
+  }
+
+  &--gift {
+
+  }
+}
+
+@media @tablet-widths {
+  .our-features__list {
+    display: flex;
+  }
+
+  .our-features__column {
+    width: 50%;
+  }
+
+  .our-features__column:nth-child(2) {
+    margin-left: 95px;
+  }
+
+  .our-features__title {
+    font-size: 43px;
+    line-height: 50px;
+    text-indent: -4px;
+    margin-bottom: 0;
+  }
+
+  .our-features__item {
+    margin-top: 100px;
+  }
+
+}
+
+@media @desktop-widths {
+  .our-features__title {
+    margin-left: 175px;
+  }
+
+  .our-features__column:nth-child(1) {
+    margin-left: 175px;
+    width: 250px;
+  }
+
+  .our-features__column:nth-child(2) {
+    width: 300px;
+  }
 }
