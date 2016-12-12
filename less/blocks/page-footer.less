@@ -1,6 +1,7 @@
 .page-footer {
   font-family: "Open Sans", "Helvetica", sans-serif;
   background-color: #f1f1f1;
+  margin-top: 50px;
 }
 
 .page-footer__container {
@@ -19,9 +20,7 @@
 
 .page-footer__copyright {
   display: block;
-  margin-left: 40px;
   position: relative;
-  width: 185px;
   font-size: 19px;
   line-height: 18px;
   font-weight: 800;
@@ -32,7 +31,7 @@
     content: "";
     position: absolute;
     top: -7px;
-    right: 0px;
+    right: 30px;
     width: 28px;
     height: 35px;
     background-image: url(/img/logo-htmlacademy.svg);
@@ -45,6 +44,7 @@
   border-top: 1px solid #e5e5e5;
   padding-top: 28px;
   padding-bottom: 30px;
+  padding-left: 40px;
 }
 
 @media @tablet-widths {
@@ -67,8 +67,17 @@
     width: 33.33333%;
   }
 
+  .page-footer__copyright {
+    text-align: right;
+    padding-right: 60px;
+
+    &:before {
+      right: 0;
+    }
+  }
+
   .page-footer__social {
-        width: 33.33333%;
+    width: 33.33333%;
   }
 }
 

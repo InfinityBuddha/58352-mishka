@@ -20,6 +20,11 @@
   list-style: none;
 }
 
+//временно
+.main-nav__dropdown {
+  display: none;
+}
+
 .main-nav a {
   display: block;
   padding-top: 28px;
@@ -88,6 +93,7 @@
 @media @desktop-widths {
   .main-nav__item a {
     margin: 0;
+    padding-bottom: 28px;
     padding-top: 28px;
     padding-left: 0;
     font-size: 17px;
@@ -119,17 +125,17 @@
 
   .main-nav__desktop-list {
     display: flex;
-    margin: 0;
-    padding-left: 0;
-    padding-top: 10px;
+    padding: 0;
     position: absolute;
-    top:55px;
+    top:75px;
     left: 0px;
     list-style: none;
   }
 
   .main-nav__desktop__item a {
     padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     font-size: 15px;
     margin-right: 62px;
   }
