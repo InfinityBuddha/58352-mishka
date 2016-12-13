@@ -1,20 +1,44 @@
+.order-form__container {
+  .container();
+
+  padding-top: 25px;
+}
+
 .order-form__description {
   font-size: 13px;
   line-height: 24px;
+  margin-bottom: 25px;
 }
 
 .order-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
   margin-bottom: 25px;
 }
 
 .order-form__legend {
   font-size: 17px;
   line-height: 16px;
-  color: #63d1bb;
+  font-weight: bold;
   text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.order-form__item {
+  padding-top: 25px;
+}
+
+.radio-button__input {
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 25px;
 }
 
 .radio-button__text {
+  vertical-align: top;
+  display: inline-block;
+  width: 75%;
   font-size: 17px;
   line-height: 18px;
   color: #000000;
@@ -43,4 +67,39 @@
 
 .order-form__info {
   color: @color-main-text;
+}
+
+@media @tablet-widths {
+  .order-form__fieldset {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  .order-form__legend {
+    margin: 0;
+    width: 15%;
+  }
+
+  .order-form__item {
+    padding: 0;
+    width: 505px;
+    height: 60px;
+
+    &--checkbox {
+      width: 205px;
+    }
+  }
+
+  .order-form__items {
+    display: flex;
+    flex-flow: row wrap;
+    width: 75%;
+  }
+}
+
+@media @desktop-widths {
+  .order-form__description {
+    margin-left: 155px;
+  }
 }

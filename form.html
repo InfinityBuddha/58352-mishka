@@ -22,14 +22,22 @@
               <li class="main-nav__item">
                 <a href="form.html">Вязание на заказ</a>
               </li>
+            </ul>
             <ul class="main-nav__user-list">
-              <li class="main-nav__item">
-                <a href="">Поиск по сайту</a>
+              <li class="main-nav__user-item main-nav__user-item--search">
+                <a href=""><span>Поиск по сайту</span></a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__user-item">
                 <a href="">Корзина: пока пуста</a>
               </li>
             </ul>
+            <ul class="main-nav__desktop-list main-nav__desktop-list--hide">
+              <li class="main-nav__desktop__item">
+                <a href="">Новые поступления</a>
+              </li>
+              <li class="main-nav__desktop__item">
+                <a href="">Распродажа</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -39,108 +47,123 @@
       <div class="section">
         <h1 class="section__title">Каталог товаров</h1>
       </div>
-      <div class="page-content__inner">
-        <form class="order-form">
+      <form class="order-form">
+        <div class="order-form__container">
           <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </p>
-          <fieldset class="order-form__fieldset">
-            <legend class="order-form__legend">Тип</legend>
-            <div class="order-form__item">
-              <label class="radio-button">
-                <input class="radio-button__input" type="radio" name="type" value="accessories"/>
-                <span class="radio-button__text">Аксессуар для интерьера</span>
-              </label>
+          <div class="order-form__fieldset">
+            <p class="order-form__legend">Тип</p>
+            <div class="order-form__items">
+              <div class="order-form__item">
+                <label class="radio-button">
+                  <input class="radio-button__input" type="radio" name="type" value="accessories"/>
+                  <span class="radio-button__text">Аксессуар для интерьера</span>
+                </label>
+              </div>
+              <div class="order-form__item">
+                <label class="radio-button">
+                  <input class="radio-button__input" type="radio" name="type" value="toys"/>
+                  <span class="radio-button__text">Детская игрушка</span>
+                </label>
+              </div>
             </div>
-            <div class="order-form__item">
-              <label class="radio-button">
-                <input class="radio-button__input" type="radio" name="type" value="toys"/>
-                <span class="radio-button__text">Детская игрушка</span>
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="order-form__fieldset">
+          </div>
+          <div class="order-form__fieldset">
             <legend class="order-form__legend">Цвет</legend>
-            <div class="order-form__item">
+            <div class="order-form__items">
+            <div class="order-form__item order-form__item--checkbox">
               <label class="checkbox">
                 <input class="checkbox__item" type="checkbox" name="color" value="white">
                 <span class="checkbox__text">Белый</span>
               </label>
             </div>
-            <div class="order-form__item">
+            <div class="order-form__item order-form__item--checkbox">
               <label class="checkbox">
                 <input class="checkbox__item" type="checkbox" name="color" value="white">
                 <span class="checkbox__text">Серый</span>
               </label>
             </div>
-            <div class="order-form__item">
+            <div class="order-form__item order-form__item--checkbox">
               <label class="checkbox">
                 <input class="checkbox__item" type="checkbox" name="color" value="white">
                 <span class="checkbox__text">«Тиффани»</span>
               </label>
             </div>
-            <div class="order-form__item">
+            <div class="order-form__item order-form__item--checkbox">
               <label class="checkbox">
                 <input class="checkbox__item" type="checkbox" name="color" value="white">
                 <span class="checkbox__text">Черный</span>
               </label>
             </div>
-            <div class="order-form__item">
+            <div class="order-form__item order-form__item--checkbox">
               <label class="checkbox">
                 <input class="checkbox__item" type="checkbox" name="color" value="white">
                 <span class="checkbox__text">Розовый</span>
               </label>
             </div>
-            <div class="order-form__item">
+            <div class="order-form__item order-form__item--checkbox">
               <label class="checkbox">
                 <input class="checkbox__item" type="checkbox" name="color" value="white">
                 <span class="checkbox__text">Оранжевый</span>
               </label>
             </div>
-          </fieldset>
-          <fieldset class="order-form__fieldset">
+            </div>
+          </div>
+          <div class="order-form__fieldset">
             <legend class="order-form__legend">Фио</legend>
-            <div class="order-form__item">
-              <label class="order-form__label" for="user-data_1">Имя:</label>
-              <div class="order-form__fields">
-                <input class="field field--text" type="text" name="user-name" placeholder="Введите ваше имя*" id="user-data_1">
+            <div class="order-form__items">
+              <div class="order-form__item">
+                <label class="order-form__label" for="user-data_1">Имя:</label>
+                <div class="order-form__fields">
+                  <input class="field field--text" type="text" name="user-name" placeholder="Введите ваше имя*" id="user-data_1">
+                </div>
+              </div>
+              <div class="order-form__item">
+                <label class="order-form__label" for="user-data_2">Фамилия:</label>
+                <div class="order-form__fields">
+                  <input class="field field--text" type="text" name="user-name" placeholder="Укажите фамилию*" id="user-data_2">
+                </div>
+              </div>
+              <div class="order-form__item">
+                <label class="order-form__label" for="user-data_3">Отчество:</label>
+                <div class="order-form__fields">
+                  <input class="field field--text" type="text" name="user-name" placeholder="Отчество, если желаете*" id="user-data_3">
+                </div>
               </div>
             </div>
-            <div class="order-form__item">
-              <label class="order-form__label" for="user-data_2">Фамилия:</label>
-              <div class="order-form__fields">
-                <input class="field field--text" type="text" name="user-name" placeholder="Укажите фамилию*" id="user-data_2">
-              </div>
-            </div>
-            <div class="order-form__item">
-              <label class="order-form__label" for="user-data_3">Отчество:</label>
-              <div class="order-form__fields">
-                <input class="field field--text" type="text" name="user-name" placeholder="Отчество, если желаете*" id="user-data_3">
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="order-form__fieldset">
+          </div>
+          <div class="order-form__fieldset">
             <legend class="order-form__legend">Тел</legend>
-            <div class="order-form__item">
-              <input class="field field--text" type="tel" name="user-name" placeholder="+7 ХХХ ХХ ХХ*" id="user-telephone">
+            <div class="order-form__items">
+              <div class="order-form__item">
+                <input class="field field--text" type="tel" name="user-name" placeholder="+7 ХХХ ХХ ХХ*" id="user-telephone">
+              </div>
             </div>
-          </fieldset>
-          <fieldset class="order-form__fieldset">
             <legend class="order-form__legend">e-mail</legend>
-            <div class="order-form__item">
-              <input class="field field--text" type="email" name="user-name" placeholder="Ваш Email*" id="user-mail">
+            <div class="order-form__items">
+              <div class="order-form__item">
+                <input class="field field--text" type="email" name="user-name" placeholder="Ваш Email*" id="user-mail">
+              </div>
             </div>
-          </fieldset>
-          <fieldset class="order-form__fieldset">
+          </div>
+          <div class="order-form__fieldset">
             <legend class="order-form__legend">Доп</legend>
-            <textarea class="field field--area" name="comment" id="" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </fieldset>
+            <div class="order-form__items">
+              <textarea class="field field--area" name="comment" id="" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </div>
           <span class="order-form__info">*Поля обязательны для заполнения</span>
-          <button class="btn" type="submit">Отправить заказ</button>
+          <button class="btn btn--order-form" type="submit">Отправить заказ</button>
         </form>
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__inner">
+      <div class="page-footer__container">
+        <div class="page-footer__logo">
+          <a href="index.html">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
+          </a>
+        </div>
         <div class="page-footer__social">
           <ul class="social-links">
             <li><a class="social-links__link social-links__link--instagram" href="#" title="Наш инстаграм"></a></li>
@@ -151,7 +174,6 @@
         <div class="page-footer__bottom">
           <a href="" class="page-footer__copyright">Разработано</a>
         </div>
-      </div>
     </footer>
   </body>
 </html>
