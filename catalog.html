@@ -8,41 +8,47 @@
   <body>
     <header class="page-header">
       <div class="page-header__inner">
-        <div class="page-header__top">
-          <a class="page-header__logo" href="index.html">
+        <div class="page-header__logo" href="index.html">
+          <a href="index.html">
             <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
           </a>
         </div>
-          <nav class="main-nav">
-            <div class="main-nav__dropdown">
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="">Поиск по сайту</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="">Корзина: пока пуста</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-        <div class="page-header__bottom">
-          <h1 class="page-header__page-title">Вязание на заказ</h1>
-        </div>
+        <nav class="main-nav">
+          <div class="main-nav__dropdown">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="main-nav__user-list">
+              <li class="main-nav__user-item main-nav__user-item--search">
+                <a href=""><span>Поиск по сайту</span></a>
+              </li>
+              <li class="main-nav__user-item">
+                <a href="">Корзина: пока пуста</a>
+              </li>
+            </ul>
+            <ul class="main-nav__desktop-list main-nav__desktop-list--hide">
+              <li class="main-nav__desktop__item">
+                <a href="">Новые поступления</a>
+              </li>
+              <li class="main-nav__desktop__item">
+                <a href="">Распродажа</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
     <main class="page-content">
-      <div class="page-content__inner">
-        <div class="section">
-          <h1 class="section__title">Каталог товаров</h1>
-        </div>
-        <section class="product-cards">
+      <div class="section">
+        <h1 class="section__title">Каталог товаров</h1>
+      </div>
+      <section class="product-cards">
+        <div class="product-cards__container">
           <article class="product-card">
             <div class="product-card__photo-wrapper">
               <img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
@@ -70,14 +76,16 @@
               <img src="img/photo-3-mobile@1x.jpg" alt="Большая корзинка для игрушек">
             </div>
             <div class="product-card__wrapper">
-              <h2 class="product-card__title">Большая корзинка для игрушек</h2>
+              <h2 class="product-card__title">Большая корзинка<br> для игрушек</h2>
               <p class="product-card__options">Диаметр 30 см, высота 30 см</p>
               <span class="product-card__price">1 500 руб.</span>
               <a class="product-card__basket" href=""></a>
             </div>
           </article>
-        </section>
-        <section class="production-process">
+        </div>
+      </section>
+      <section class="production-process">
+        <div class="production-process__container">
           <article class="production-card">
             <h2 class="production-card__title production-card__title--camera">Процесс производства</h2>
             <video class="production-card__video" poster="img/video-mobile@1x.jpg">
@@ -89,11 +97,16 @@
               <a class="btn" href="">Сделать заказ</a>
             </div>
           </article>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__inner">
+      <div class="page-footer__container">
+        <div class="page-footer__logo">
+          <a href="index.html">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
+          </a>
+        </div>
         <div class="page-footer__social">
           <ul class="social-links">
             <li><a class="social-links__link social-links__link--instagram" href="#" title="Наш инстаграм"></a></li>
@@ -104,7 +117,6 @@
         <div class="page-footer__bottom">
           <a href="" class="page-footer__copyright">Разработано</a>
         </div>
-      </div>
     </footer>
   </body>
 </html>

@@ -1,20 +1,138 @@
 .main-nav {
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
   font-size: 17px;
   line-height: 24px;
-  font-weight: 800;
+  font-weight: bold;
+  margin-top: 1px;
 }
 
 .main-nav__list {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
-.main-nav__item a {
+.main-nav__user-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+.main-nav a {
   display: block;
-  padding-top:23px;
-  padding-bottom: 23px;
+  padding-top: 28px;
+  padding-bottom: 27px;
+  padding-left: 50px;
   text-decoration: none;
+  text-align: left;
+  box-shadow: 0px 1px 0px #ececec;
   color: #000000;
+}
+
+.main-nav__desktop-list--hide {
+  display: none;
+}
+
+@media @tablet-widths {
+  .main-nav {
+    position: static;
+  }
+
+  .main-nav a {
+    box-shadow: none;
+  }
+
+  .main-nav__item a{
+    padding: 0;
+    margin-right: 50px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 95px;
+    font-size: 15px;
+    box-shadow: none;
+  }
+
+  .main-nav__user-list {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+
+  .main-nav__user-item {
+    box-shadow: -1px 0px 0px #ececec;
+
+    &--search {
+      min-width: 85px;
+    }
+  }
+
+  .main-nav__user-item span {
+    display: none;
+  }
+
+}
+
+@media @tablet-widths and @desktop-widths {
+  .main-nav__item a {
+    padding: 0;
+    margin-left: 35px;
+  }
+}
+
+@media @desktop-widths {
+  .main-nav__item a {
+    margin: 0;
+    padding-bottom: 28px;
+    padding-top: 28px;
+    padding-left: 0;
+    font-size: 17px;
+    text-align: left;
+  }
+
+  .main-nav__dropdown {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    position: static;
+  }
+
+  .main-nav__item:nth-child(1) {
+    width: 185px;
+  }
+
+  .main-nav__item:nth-child(2) {
+    padding-left: 35px;
+    box-shadow: -1px 0px 0px #ececec;
+  }
+
+  .main-nav__user-item:nth-child(2) a{
+    text-align: right;
+    width: 260px;
+  }
+
+  .main-nav__desktop-list {
+    display: flex;
+    padding: 0;
+    position: absolute;
+    top:75px;
+    left: 0px;
+    list-style: none;
+  }
+
+  .main-nav__desktop__item a {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 15px;
+    margin-right: 62px;
+  }
 }

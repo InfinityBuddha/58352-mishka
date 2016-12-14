@@ -1,17 +1,82 @@
 .page-footer {
+  font-family: "Open Sans", "Helvetica", sans-serif;
   background-color: #f1f1f1;
+  margin-top: 50px;
 }
 
-.page-footer__inner {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 25px;
-  padding-top: 25px;
+.page-footer__container {
+  .container();
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
 
 .page-footer__copyright {
+  display: block;
+  position: relative;
   font-size: 19px;
+  line-height: 18px;
   font-weight: 800;
   text-decoration: none;
   color: #000000;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    right: 30px;
+    width: 28px;
+    height: 35px;
+    background-image: url(/img/logo-htmlacademy.svg);
+    background-repeat: no-repeat;
+    color: #63d1bb;
+  }
+}
+
+.page-footer__bottom {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 28px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
+
+@media @tablet-widths {
+  .page-footer__container {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 33.33333%;
+  }
+
+  .page-footer__bottom {
+    border: none;
+    padding: 0;
+    width: 33.33333%;
+  }
+
+  .page-footer__copyright {
+    text-align: right;
+    padding-right: 60px;
+
+    &:before {
+      right: 0;
+    }
+  }
+
+  .page-footer__social {
+    width: 33.33333%;
+  }
 }
