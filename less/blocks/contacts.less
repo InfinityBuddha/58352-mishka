@@ -3,7 +3,7 @@
   padding-top: 30px;
 }
 
-.contacts__wrapper {
+.contacts__container {
   .container();
 
   padding-bottom: 35px;
@@ -33,12 +33,12 @@
   vertical-align: top;
   width: 70px;
 }
+.contacts__item-value p{
+  margin: 0;
+}
 
-.contacts__item-value {
-
-  &--email {
-    border-bottom: 1px solid #62d1ba;
-  }
+.contacts__item-value span {
+  border-bottom: 1px solid #62d1ba;
 }
 
 @media @tablet-widths {
@@ -69,18 +69,17 @@
   }
 
   .contacts__item-value {
-    max-width: 200px;
+    max-width: 210px;
   }
 }
 
 @media @desktop-widths {
-  .contacts__wrapper {
-    position: relative;
+  .contacts__container {
+    padding-left: 170px;
   }
 
   .contacts__text-block {
     padding-top: 73px;
-    padding-left: 170px;
     width: 50%;
     margin-bottom: 27px;
   }

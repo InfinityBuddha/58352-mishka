@@ -1,24 +1,43 @@
 .page-header {
   position: relative;
-  font-family: "Open Sans", "Helvetica", sans-serif;
-    box-shadow: 0px 1px 0px #ececec;
+  box-shadow: 0px 1px 0px #ececec;
 }
 
 .page-header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
-  padding: 20px 0px;
   text-align: center;
+  height: 80px;
+  z-index: 2;
 }
 
+.page-header__logo a:hover {
+  opacity: 0.6;
+}
 
+.page-header__logo img {
+  width: 88px;
+  height: 39px;
+}
 
 @media @tablet-widths {
-  .page-header__inner {
+  .page-header__container {
     .container();
 
     position: relative;
     display: flex;
     box-shadow: 0px 1px 0px #ececec;
+
+    &:after {
+      content: "Бесплатная доставка по России";
+      position: absolute;
+      bottom: -35px;
+      color: #444444;
+      font-size: 15px;
+      right: 0;
+    }
   }
 
   .page-header__logo {
@@ -27,11 +46,21 @@
     box-shadow: none;
   }
 
+  .page-header__logo img {
+    width: 110px;
+    height: 55px;
+  }
 }
 
 @media @desktop-widths {
   .page-header__logo {
     position: absolute;
-    right: 45%;
+    top: 5%;
+    right: 43%;
+  }
+
+  .page-header__logo img {
+    width: 140px;
+    height: 75px;
   }
 }
