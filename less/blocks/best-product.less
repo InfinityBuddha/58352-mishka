@@ -5,6 +5,7 @@
 
 .best-product__container {
   .container();
+
   display: flex;
   flex-flow: column nowrap;
   position: relative;
@@ -20,7 +21,7 @@
 
 .best-product__header {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .best-product__title {
@@ -31,7 +32,7 @@
   &:before {
     content: "Товар недели";
     position: absolute;
-    bottom: -25px;
+    bottom: -29px;
     font-size: 17px;
     line-height: 16px;
     margin: 0;
@@ -80,6 +81,7 @@
 
 .best-product__price {
   font-size: 17px;
+  margin-bottom: 27px;
   line-height: 24px;
   font-weight: 800;
   text-align: center;
@@ -88,7 +90,8 @@
 
 @media @tablet-widths {
   .best-product {
-    margin-top: 150px;
+    margin-top: 155px;
+    position: relative;
   }
 
   .best-product__container {
@@ -117,8 +120,8 @@
     line-height: 50px;
 
     &:before {
-      right: 41px;
-      top: 10px;
+      right: 33px;
+      top: 13px;
       width: 80px;
       text-align: center;
     }
@@ -127,7 +130,7 @@
   .best-product__description {
     font-size: 17px;
     line-height: 30px;
-    margin-top: 0;
+    margin-top: -10px;
   }
 
   .best-product__photo-container {
@@ -143,7 +146,7 @@
   }
 
   .best-product__buy-group {
-    width: 50%;
+    width: 49%;
     padding-right: 50px;
   }
 
@@ -155,6 +158,10 @@
 }
 
 @media @desktop-widths {
+  .best-product {
+    margin-top: 72px;
+  }
+
   .best-product__container {
     min-height: 635px;
     justify-content: flex-end;
@@ -170,7 +177,11 @@
   .best-product__header {
     z-index: 1;
     position: relative;
-    top: -45px;
+    top: -22px;
+  }
+
+  .best-product__options {
+    padding-top: 7px;
   }
 
   .best-product__title {
@@ -179,8 +190,8 @@
     text-indent: -5px;
 
     &:before {
-      top: 17px;
-      left: -180px;
+      top: 16px;
+      left: -131px;
     }
   }
 
@@ -189,7 +200,7 @@
   }
 
   .best-product__buy-group {
-    margin-top: 100px;
+    margin-top: 105px;
     padding-left: 175px;
   }
 }

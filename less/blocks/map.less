@@ -1,11 +1,17 @@
-.map {
-  height: 450px;
+#map {
+  height: 457px;
   margin-bottom: 40px;
   width: 100%;
 }
 
-@media @tablet-widths {
+.map__container {
+  padding-top: 39px;
+}
 
+@media @tablet-widths {
+#map {
+  margin-bottom: 55px;
+}
 }
 
 @media @desktop-widths {
@@ -14,7 +20,7 @@
     position: relative;
   }
 
-  .map {
+  #map {
     margin: 0;
     position: absolute;
     bottom: -50px;

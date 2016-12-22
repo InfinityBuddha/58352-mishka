@@ -15,8 +15,8 @@
 
 .radio-button__input + span::before {
   content:"";
-  width: 40px;
-  height: 40px;
+  width: 39px;
+  height: 39px;
   border: 2px solid #444444;
   display: block;
   border-radius: 50%;
@@ -37,8 +37,22 @@
 @media @tablet-widths {
   .radio-button__text {
     font-size: 19px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .radio-button__input + span::before {
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+  }
+
+  .radio-button__input:checked + span:after {
+    left: 16px;
+    top: 16px;
+    width: 22px;
+    height: 22px;
   }
 }
 
-@media @desktop-widths {
-}
+

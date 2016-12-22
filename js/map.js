@@ -3,7 +3,11 @@ function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 59.938950, lng: 30.323051},
     zoom: 15,
-    disableDefaultUI: true
+    disableDefaultUI: true,
+    scrollwheel: false,
+    navigationControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
   });
 
   var image = "img/icon-map-pin.svg";

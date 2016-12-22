@@ -1,36 +1,45 @@
-.search-icon:before {
-    content: "";
+.search-icon {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 33px;
+    top: 35px;
     left: 31px;
-    background-image: url("/img/icon-search.svg");
     background-repeat: no-repeat;
-    opacity: 0.2;
+    fill: #d3d2d2;
 }
 
-.icon-cart:before {
-    content: "";
+.icon-cart{
     width: 25px;
     height: 19px;
     position: absolute;
-    top: 32px;
-    left: 31px;
-    background-image: url("/img/icon-cart.svg");
+    top: 35px;
+    left: 26px;
     background-repeat: no-repeat;
-    opacity: 0.3;
+    fill: #d3d2d2;
 }
 
+.icon-menu-closed {
+  display: none;
+}
+
+.icon-menu-opened {
+  display: none;
+}
 
 .interior-icon {
-  opacity: 0.5;
+  height: 60px;
   fill: #149080;
+  opacity: 0.5;
 }
 
 .toy-icon {
-  opacity: 0.5;
   fill: #149080;
+  opacity: 0.5;
+}
+
+.promo__item:active .toy-icon,
+.promo__item:active .interior-icon {
+  opacity: 0.3;
 }
 
 .icon-play {
@@ -40,18 +49,60 @@
   transform: translate(-50%, -50%);
 }
 
+.icon-phone {
+  position: absolute;
+  right: 5px;
+  bottom: 15px;
+  opacity: 0.2;
+}
+
+.icon-mail {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  opacity: 0.2;
+}
+
+
 .icon-camera {
   position: absolute;
   fill: #63d1bb;
   left: 32px;
   top: 30px;
+}
 
-  @media @tablet-widths {
-    left: 40px;
-    top: 495px;
+
+@media @tablet-widths {
+  /*.icon-zigzag-line:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-image: url("/img/bg-zigzag-line.svg");
+    width: 100%;
+    height: 23px;
+  }
+*/
+  .product-card {
+    max-height: 334px;
   }
 
-  @media @desktop-widths {
+  .icon-zigzag-fill:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-image: url("/img/bg-zigzag-fill.svg");
+    width: 100%;
+    height: 25px;
+  }
+
+  .icon-camera {
+    left: 40px;
+    top: 487px;
+  }
+}
+
+@media @desktop-widths {
+  .icon-camera {
     top: 40px;
     left: 760px;
   }
