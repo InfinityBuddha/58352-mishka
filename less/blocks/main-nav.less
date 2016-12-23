@@ -8,8 +8,6 @@
   z-index: 1;
 }
 
-
-
 @media @mobile-widths-only {
   .main-nav__toggle {
     position: absolute;
@@ -97,6 +95,7 @@
 .main-nav__user-item-link:hover .icon-cart,
 .main-nav__user-item-link:hover .search-icon {
   fill: @color-hover-link;
+  opacity: 1;
 }
 
 .main-nav__desktop-list--hide {
@@ -139,6 +138,7 @@
   .main-nav__user-list {
     display: flex;
     justify-content: flex-end;
+    flex-grow: 1;
   }
 
   .main-nav__user-item:nth-child(2) a {

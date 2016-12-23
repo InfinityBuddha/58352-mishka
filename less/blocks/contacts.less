@@ -1,10 +1,12 @@
 .contacts {
-  padding-top: 76px;
+  padding-top: 37px;
   position: relative;
 }
 
 .contacts__container {
   .container();
+
+  position: relative;
 }
 
 .contacts__title {
@@ -14,7 +16,7 @@
   font-weight: 800;
 }
 
-.contacts__list {
+.contacts__table {
   width: 100%;
   margin-bottom: 5px;
   border-spacing: 0px 25px;
@@ -23,7 +25,7 @@
   color: @color-main-text;
 }
 
-.contacts__list address {
+.contacts__table address {
   font-style: normal;
 }
 
@@ -49,6 +51,10 @@
 }
 
 @media @tablet-widths {
+  .contacts {
+    padding-top: 39px;
+  }
+
   .contacts__title {
     position: relative;
     font-size: 43px;
@@ -66,12 +72,12 @@
     }
   }
 
-  .contacts__list tbody {
+  .contacts__table tbody {
     display: flex;
     font-size: 17px;
   }
 
-  .contacts__list tr {
+  .contacts__table tr {
     flex-basis: 50%;
   }
 
@@ -82,21 +88,24 @@
 
 @media @desktop-widths {
   .contacts {
-    margin-top: 104px;
+    .container();
+
+    margin-top: 96px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    margin-bottom: 115px;
   }
 
   .contacts__container {
-    padding-left: 170px;
+    padding-left: 60px;
   }
 
   .contacts__text-block {
-    padding-top: 73px;
-    width: 50%;
-    margin-bottom: 30px;
+    margin-left: 60px;
   }
 
   .contacts__title {
-    margin-top: 0;
     font-size: 53px;
 
     &:after {
@@ -104,8 +113,9 @@
       left: -107px;
     }
   }
-  .contacts__list tbody {
+  .contacts__table tbody {
     display: table;
+    margin-bottom: 29px;
   }
 
 }

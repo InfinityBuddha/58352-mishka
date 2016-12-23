@@ -17,12 +17,14 @@
     color: #ffffff;
   }
 
-  &--contacts {
-    margin: 0 auto;
-    max-width: 260px;
+  &__contacts {
+    position: absolute;
+    bottom: -555px;
+    right: 30px;
+    width: 89%;
   }
 
-  &--order-form {
+  &__order-form {
     background-color: #fff;
   }
 
@@ -36,20 +38,22 @@
 @media @tablet-widths {
   .btn {
 
-    &--reviews {
+    &__reviews {
       width: 178px;
       position: absolute;
       top: 79px;
       right: 0;
     }
 
-    &--order-form {
+    &__order-form {
       padding-left: 30px;
       padding-right: 30px;
       width: 235px;
     }
 
-    &--contacts {
+    &__contacts {
+      bottom: -573px;
+      right: 218px;
       max-width: 230px;
     }
   }
@@ -58,16 +62,17 @@
 @media @desktop-widths {
   .btn {
 
-    &--contacts {
+    &__contacts {
+      position: static;
       margin: 0;
       width: 230px;
     }
 
-    &--order-form {
-      margin-left: 175px;
+    &__order-form {
+      margin-left: 170px;
     }
 
-    &--reviews {
+    &__reviews {
       top: 93px;
     }
   }
