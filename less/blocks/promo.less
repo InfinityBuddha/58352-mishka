@@ -83,6 +83,18 @@
     @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 144dppx) {
       background-image: url('../img/hero-desktop@2x.jpg');
     }
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 26px;
+      background-image: url("/img/bg-zigzag-fill.svg");
+      background-size: contain;
+      background-repeat: repeat-x;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
   }
 
   .promo__items {
@@ -111,6 +123,12 @@
 }
 
 @media @desktop-widths {
+  .promo {
+    &:after {
+      height: 32px;
+      bottom: -13px;
+    }
+  }
   .promo__header {
     font-size: 53px;
     line-height: 57px;

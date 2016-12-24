@@ -3,7 +3,7 @@ var toggle = document.querySelector(".main-nav__toggle");
 
 mainNav.classList.remove("main-nav--nojs");
 
- toggle.addEventListener('click', function() {
+  toggle.addEventListener('click', function() {
       if (mainNav.classList.contains('main-nav--closed')) {
         mainNav.classList.remove('main-nav--closed');
         mainNav.classList.add('main-nav--opened');
@@ -11,4 +11,4 @@ mainNav.classList.remove("main-nav--nojs");
         mainNav.classList.add('main-nav--closed');
         mainNav.classList.remove('main-nav--opened');
       }
-    });
+  });

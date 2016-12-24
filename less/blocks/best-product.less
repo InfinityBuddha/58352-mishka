@@ -1,6 +1,18 @@
 .best-product {
   position: relative;
   padding-bottom: 35px;
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 23px;
+    background-image: url("/img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+  }
 }
 
 .best-product__container {
@@ -162,6 +174,10 @@
   .best-product {
     margin-top: 72px;
     padding-bottom: 91px;
+
+    &:after {
+      height: 24px;
+    }
   }
 
   .best-product__container {

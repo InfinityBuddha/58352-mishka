@@ -23,5 +23,3 @@ buttonBestProduct.addEventListener("click", openModalWindow);
 for (var i = 0; i < buttonCatalog.length; i++) {
   buttonCatalog[i].addEventListener("click", openModalWindow);
 }
-
-
