@@ -17,6 +17,18 @@
 @media @tablet-widths {
   .section {
     min-height: 226px;
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 26px;
+      background-image: url("/img/bg-zigzag-fill.svg");
+      background-size: contain;
+      background-repeat: repeat-x;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
   }
 
   .section__title {
