@@ -1,6 +1,6 @@
 var modalWindow = document.querySelector(".modal-section");
 var buttonBestProduct = document.querySelector(".btn");
-var buttonCatalog = document.querySelectorAll(".product-card__cart");
+var buttonCatalog = document.querySelectorAll(".product-card__link");
 
 var ESC_BUTTON_CODE = 27;
 
