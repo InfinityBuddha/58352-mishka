@@ -1,7 +1,7 @@
 .btn {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   font-size: 17px;
   line-height: 16px;
   color: #444444;
@@ -11,44 +11,76 @@
   text-align: center;
   border: 2px solid #444444;
   width: 100%;
+  outline: none;
 
-  &--contacts {
-    margin: 0 auto;
-    max-width: 260px;
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #8d8d8d;
+  }
+
+  &--green {
+    background-color: #63d1bb;
+    color: #ffffff;
+    border: none;
   }
 }
 
-@media @tablet-widths {
-  .btn {
+.btn__contacts {
+  position: absolute;
+  bottom: -555px;
+  right: 30px;
+  width: 89%;
+}
 
-    &--reviews {
+.btn__order-form {
+  background-color: #fff;
+}
+
+@media @tablet-widths {
+
+  .btn__reviews {
     width: 178px;
     position: absolute;
-    top: 0;
+    top: 79px;
     right: 0;
-    }
+  }
 
-    &--contacts {
-      max-width: 668px;
-      width: 235px;
-    }
+  .btn__order-form {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 235px;
+  }
 
-    &--order-form {
-      padding-left: 30px;
-      padding-right: 30px;
-      background-color: #fff;
-      width: 245px;
-    }
+  .btn__contacts {
+    bottom: -573px;
+    right: 218px;
+    max-width: 230px;
   }
 }
 
 @media @desktop-widths {
-  .btn {
+  .btn__contacts {
+    position: static;
+    margin: 0;
+    width: 230px;
+  }
 
-    &--contacts {
-      margin: 0;
-      margin-left: 170px;
-      width: 230px;
-    }
+  .btn__order-form {
+    margin-left: 170px;
+  }
+
+
+  .btn__reviews {
+    top: 86px;
+  }
+
+  .btn__production-card {
+    margin-top: 12px;
+    margin-left: 30px;
+    width: 230px;
   }
 }

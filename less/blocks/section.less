@@ -1,4 +1,5 @@
 .section {
+  position: relative;
   background-color: #f1f1f1;
   display: flex;
   flex-direction:column;
@@ -15,7 +16,19 @@
 
 @media @tablet-widths {
   .section {
-    min-height: 225px;
+    min-height: 226px;
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 26px;
+      background-image: url("/img/bg-zigzag-fill.svg");
+      background-size: contain;
+      background-repeat: repeat-x;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
   }
 
   .section__title {
@@ -25,7 +38,7 @@
 
 @media @desktop-widths {
   .section {
-    min-height: 275px;
+    min-height: 254px;
   }
 
   .section__title {

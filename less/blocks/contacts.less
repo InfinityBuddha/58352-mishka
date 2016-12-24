@@ -1,12 +1,12 @@
 .contacts {
-  margin-top: 70px;
-  padding-top: 30px;
+  padding-top: 26px;
+  position: relative;
 }
 
-.contacts__wrapper {
+.contacts__container {
   .container();
 
-  padding-bottom: 35px;
+  position: relative;
 }
 
 .contacts__title {
@@ -16,41 +16,54 @@
   font-weight: 800;
 }
 
-.contacts__list {
+.contacts__table {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   border-spacing: 0px 25px;
   font-size: 15px;
   line-height: 30px;
   color: @color-main-text;
 }
 
-.contacts__list address {
+.contacts__table address {
   font-style: normal;
 }
 
 .contacts__item {
   vertical-align: top;
-  width: 70px;
+  width: 75px;
 }
 
-.contacts__item-value {
+.contacts__item-value-text{
+  margin: 0;
+}
 
-  &--email {
-    border-bottom: 1px solid #62d1ba;
+.contacts__item-value-link {
+  border-bottom: 1px solid #62d1ba;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 @media @tablet-widths {
+  .contacts {
+    padding-top: 16px;
+  }
+
   .contacts__title {
     position: relative;
     font-size: 43px;
     line-height: 50px;
 
-    &:before {
+    &:after {
       content: "";
       position: absolute;
-      top: 0;
+      top: -14px;
       right: 0;
       background-image: url(/img/icon-flag.svg);
       background-repeat: no-repeat;
@@ -59,41 +72,49 @@
     }
   }
 
-  .contacts__list tbody {
+  .contacts__table tbody {
     display: flex;
     font-size: 17px;
   }
 
-  .contacts__list tr {
+  .contacts__table tr {
     flex-basis: 50%;
   }
 
   .contacts__item-value {
-    max-width: 200px;
+    max-width: 230px;
   }
 }
 
 @media @desktop-widths {
-  .contacts__wrapper {
-    position: relative;
+  .contacts {
+    .container();
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    margin-top: 78px;
+    margin-bottom: 106px;
+  }
+
+  .contacts__container {
+    padding-left: 60px;
   }
 
   .contacts__text-block {
-    padding-top: 73px;
-    padding-left: 170px;
-    width: 50%;
-    margin-bottom: 27px;
+    margin-left: 60px;
   }
 
   .contacts__title {
-    margin-top: 0;
-    &:before {
-      top: -15px;
-      left: -100px;
+    font-size: 53px;
+
+    &:after {
+      top: -13px;
+      left: -107px;
     }
   }
-  .contacts__list tbody {
+  .contacts__table tbody {
     display: table;
+    margin-bottom: 29px;
   }
-
 }

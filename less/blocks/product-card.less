@@ -1,85 +1,128 @@
 .product-card {
   display: flex;
   flex-flow: column;
-  padding-bottom: 25px;
   margin-bottom: 30px;
   font-family: "Open Sans", "Helvetica", sans-serif;
   border: 1px solid #ececec;
+}
 
+.product-card a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card:hover .product-card__container {
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+}
+
+.product-card:active .product-card__container {
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
 }
 
 .product-card__title {
   margin: 0;
   font-size: 17px;
   line-height: 24px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.product-card__icon-cart {
+  fill: #d3d2d2;
+
+  &:hover {
+    fill: @color-hover-link;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product-card__options {
+  flex-grow: 1;
   font-size: 13px;
   line-height: 30px;
+  margin-top: 9px;
   color: @color-main-text;
   padding-bottom: 20px;
   border-bottom: 1px solid #ececec;
 }
 
 .product-card__price {
+  padding-top: 10px;
+  display: block;
   font-size: 15px;
   line-height: 24px;
   font-weight: 800;
 }
 
-.product-card__photo-wrapper {
-  width: 100%;
-}
-
-.product-card__photo-wrapper img {
-  width: 100%;
-  height: auto;
-}
-
-.product-card__wrapper {
+.product-card__container {
   position: relative;
-  margin-top: 20px;
+  margin-top: 29px;
   padding-left: 25px;
   padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+.product-card__photo-container img{
+  display: block;
+}
+
+.product-card__cart {
+  font-size: 0;
+  position: absolute;
+  right: 30px;
+  bottom: 28px;
+  width: 20px;
+  height: 20px;
 }
 
 @media @tablet-widths {
   .product-card {
     flex-flow: row nowrap;
+    margin-bottom: 54px;
   }
 
-  .product-card__wrapper {
+  .product-card__container {
     display: flex;
     flex-flow: column nowrap;
     flex-grow: 1;
   }
 
-  .product-card__photo-wrapper {
-    width: 50%;
+  .product-card__photo-container {
+    width: 332px;
   }
 
   .product-card__title {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 20px;
   }
 
   .product-card__price {
     font-size: 17px;
+    text-indent: 5px;
+  }
+
+  .product-card__options {
+    font-size: 15px;
   }
 }
 
 @media @desktop-widths {
-  .product-card__photo-wrapper {
-    width: 100%;
-  }
-
   .product-card {
     flex-flow: column nowrap;
-    flex-basis: 320px;
+    flex-basis: 317px;
+    min-height: 659px;
   }
 
-  .product-card__options {
-
+  .product-card__photo-container {
+    width: 100%;
   }
 }
