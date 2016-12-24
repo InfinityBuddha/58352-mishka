@@ -21,11 +21,7 @@ gulp.task("style", function() {
     .pipe(less())
     .pipe(postcss([
       autoprefixer({browsers: [
-        "last 1 version",
-        "last 2 Chrome versions",
-        "last 2 Firefox versions",
-        "last 2 Opera versions",
-        "last 2 Edge versions"
+        "last 2 versions"
       ]}),
       mqpacker({
         sort: true
@@ -60,10 +56,6 @@ gulp.task("symbols", function() {
 gulp.task("serve", ["style"], function() {
   server.init({
     server: ".",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
   });
 
   gulp.watch("less/**/*.less", ["style"]);
@@ -87,5 +79,5 @@ gulp.task("clean", function() {
 });
 
 gulp.task("build", function(fn) {
-  run("clean", "copy", "style", "images", "symbols", fn);
+  run("clean", "style", "copy", "images", "symbols", fn);
 });
