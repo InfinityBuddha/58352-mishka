@@ -17,8 +17,8 @@ var run = require("run-sequence");
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
-    .pipe(plumber()) //чтобы билд не падал
-    .pipe(less()) //запуск препроцессора
+    .pipe(plumber())
+    .pipe(less())
     .pipe(postcss([
       autoprefixer({browsers: [
         "last 1 version",
@@ -59,7 +59,7 @@ gulp.task("symbols", function() {
 
 gulp.task("serve", ["style"], function() {
   server.init({
-    server: ".", //указываем путь откуда серверу брать файлы. Точка - корень папки.
+    server: ".",
     notify: false,
     open: true,
     cors: true,
