@@ -16,7 +16,7 @@ gulp.task("style", function() {
         "last 2 versions"
       ]})
     ]))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("css"));
     .pipe(server.stream());
 });
 
