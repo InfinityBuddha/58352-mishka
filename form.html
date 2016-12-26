@@ -5,6 +5,7 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -68,7 +69,7 @@
       </div>
     </header>
     <main class="page-content">
-      <div class="section icon-zigzag-fill">
+      <div class="section">
         <h1 class="section__title">Вязание на заказ</h1>
       </div>
       <form class="order-form">
@@ -80,7 +81,7 @@
             <div class="order-form__items">
               <div class="order-form__item">
                 <label class="radio-button">
-                  <input class="radio-button__input" type="radio" name="type" value="accessories"/>
+                  <input class="radio-button__input" type="radio" name="type" value="accessories" disabled/>
                   <span class="radio-button__text">Аксессуар для интерьера</span>
                 </label>
               </div>
@@ -93,15 +94,17 @@
             </div>
           </div>
         </div>
-
         <div class="order-form__section">
           <div class="order-form__container">
             <div class="order-form__fieldset">
               <div class="order-form__legend">Цвет</div>
               <div class="order-form__items-checkbox">
+                <svg class="icon-checkbox-checked" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="33" height="22" viewBox="0 0 33 22">
+                  <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAWBAMAAAC8tehJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAALVBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAABzvbT2AAAADXRSTlMAMO9gUM8gEI+fv4BA1DyE8AAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAACASURBVBjTY2BABUIGaAIsugpoIraXBFAFmO8qoiu5moCuJBxDSQGqAAeGkrkQJcxwAc67yyESE+BKbkLotTfhSiagMthhSuCKS+9OQBg4HaQk9iaapaV3NzAg2RoOVHIZ2WV7rxaU3kUJKea7MahKgD68i6oEpAhNCQODEVJYAgDEmSqVKDmyZgAAAABJRU5ErkJggg==" width="33" height="22"/>
+                </svg>
                 <div class="order-form__item-checkbox">
                   <label class="checkbox">
-                    <input class="checkbox__input" type="checkbox" name="color" value="white">
+                    <input class="checkbox__input" type="checkbox" name="color" value="white" disabled>
                     <span class="checkbox__text">Белый</span>
                   </label>
                 </div>
