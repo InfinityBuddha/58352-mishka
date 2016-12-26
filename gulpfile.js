@@ -27,10 +27,10 @@ gulp.task("style", function() {
         sort: true
       })
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("css"))
     .pipe(minify())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
+    //.pipe(rename("style.min.css"))
+    .pipe(gulp.dest("css"))
     .pipe(server.stream());
 });
 
@@ -64,7 +64,7 @@ gulp.task("serve", ["style"], function() {
 
 gulp.task("copy", function() {
   return gulp.src([
-    "fonts/**/*.{woff, woff2}",
+    "fonts/**/*.{woff,woff2}",
     "img/**",
     "js/**",
     "*.html"

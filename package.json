@@ -32,7 +32,8 @@
     "*.js",
     "js/**/*.js",
     "img/**/*.svg",
-    "less/**/*.less"
+    "less/**/*.less",
+    "fonts/**/*.{woff,woff2}"
   ],
   "engines": {
     "node": "6.7"
