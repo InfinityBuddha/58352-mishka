@@ -30,10 +30,9 @@
 }
 
 .btn__contacts {
-  position: absolute;
-  bottom: -555px;
-  right: 30px;
-  width: 89%;
+  display: inline-block;
+  width: 100%;
+  transform: translateY(497px);
 }
 
 .btn__order-form {
@@ -56,14 +55,16 @@
   }
 
   .btn__contacts {
-    bottom: -573px;
-    right: 218px;
-    max-width: 230px;
+    display: block;
+    margin: 0 auto;
+    width: 230px;
   }
 }
 
 @media @desktop-widths {
   .btn__contacts {
+    transform: none;
+    margin: 0;
     position: static;
     margin: 0;
     width: 230px;
