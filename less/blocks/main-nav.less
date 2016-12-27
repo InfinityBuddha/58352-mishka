@@ -13,9 +13,9 @@
     position: absolute;
     background-color: #ffffff;
     top: 25px;
-    right: 60px;
-    width: 35px;
-    height: 35px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
     border:none;
     background-color: transparent;
     font-size: 0;
@@ -27,16 +27,16 @@
   .main-nav--opened .icon-menu-closed {
     position: absolute;
     display: block;
-    top: 30px;
-    right: 68px;
+    top: 32px;
+    right: 30px;
     z-index: 1;
   }
 
   .main-nav--closed .icon-menu-opened {
     position: absolute;
     display: block;
-    top:32px;
-    right: 68px;
+    top: 32px;
+    right: 30px;
   }
 
   .main-nav--closed .main-nav__dropdown {
@@ -51,7 +51,8 @@
   }
 
   .main-nav--nojs .main-nav__dropdown {
-    position: static;
+    display: block;
+    border-top: 1px solid #ececec
   }
 
   .main-nav--nojs .icon-menu-closed,
