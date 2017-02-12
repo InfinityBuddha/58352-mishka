@@ -14,6 +14,7 @@ var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
 var del = require("del");
 var run = require("run-sequence");
+var deploy = require('gulp-gh-pages');
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
