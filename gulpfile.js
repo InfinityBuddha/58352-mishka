@@ -55,7 +55,7 @@ gulp.task("symbols", function() {
 });
 
 gulp.task('deploy', function () {
-  return gulp.src("../build/**/*")
+  return gulp.src("./build/**/*")
     .pipe(deploy())
 });
 
@@ -86,4 +86,5 @@ gulp.task("clean", function() {
 
 gulp.task("build", function(fn) {
   run("clean", "style", "copy", "images", "symbols", fn);
+
 });
