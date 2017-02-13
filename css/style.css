@@ -616,10 +616,11 @@ template {
   height: 487px;
   overflow: hidden;
   background-image: url('../img/hero-mobile@1x.jpg');
-  background-position: center top;
+  background-position: 50% -50px;
   background-repeat: no-repeat;
   background-color: #F9F9F9;
   text-align: center;
+  background-size: cover;
 }
 .promo__header {
   -ms-flex: 1;
@@ -2428,7 +2429,7 @@ template {
     background-color: #62d1ba;
   }
 }
-@media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 144), (min-resolution: 144dpi) and (min-resolution: 144dppx) {
+@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 768px) and (min-resolution: 144dpi), (max-width: 768px) and (-webkit-min-device-pixel-ratio: 144), (max-width: 768px) and (min-resolution: 144dppx) {
   .promo {
     background-image: url('../img/hero-mobile@2x.jpg');
   }
